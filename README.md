@@ -6,7 +6,7 @@ Run:
 
 ```
 # Clone
-git clone git@github.com:vaidik/dotfiles.git
+git clone https://github.com/vaidik/dotfiles.git
 
 # Install
 pushd dotfiles && ./install.sh && popd
