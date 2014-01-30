@@ -2,3 +2,8 @@
 
 ## Installation
 
+Run:
+
+```
+./install.sh
+```
