@@ -5,5 +5,9 @@
 Run:
 
 ```
+# Clone
+git clone git@github.com:vaidik/dotfiles.git
+
+# Install
 ./install.sh
 ```
