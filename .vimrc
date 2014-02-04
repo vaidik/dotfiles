@@ -131,9 +131,3 @@ Bundle "pangloss/vim-javascript"
 au BufRead,BufNewFile *.scala set filetype=scala
 au! Syntax scala source ~/.vim/syntax/scala.vim
 Bundle 'derekwyatt/vim-scala'
-
-map <Leader>o :call InsertLine()<CR>
-function! InsertLine()
-  let trace = expand("import ipdb; ipdb.set_trace()")
-  execute "normal o".trace
-endfunction
