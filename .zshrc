@@ -69,3 +69,6 @@ export PATH="/Users/vkapoor/Applications/play/play-dist:$PATH"
 
 # Source aliases
 source ~/.aliasrc
+
+# ZSH Prompt
+PROMPT="${ret_status}%{$fg_bold[green]%}%p[%m] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
