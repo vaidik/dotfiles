@@ -131,3 +131,8 @@ Bundle "pangloss/vim-javascript"
 au BufRead,BufNewFile *.scala set filetype=scala
 au! Syntax scala source ~/.vim/syntax/scala.vim
 Bundle 'derekwyatt/vim-scala'
+
+" Syntastic
+Bundle 'scrooloose/syntastic'
+
+" autocmd VimEnter * NERDTree

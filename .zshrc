@@ -71,4 +71,7 @@ export PATH="/Users/vkapoor/Applications/play/play-dist:$PATH"
 source ~/.aliasrc
 
 # ZSH Prompt
-PROMPT="${ret_status}%{$fg_bold[green]%}%p[%m] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
+# PROMPT="${ret_status}%{$fg_bold[green]%}%p[%m] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
+
+# Archey
+archey -c
