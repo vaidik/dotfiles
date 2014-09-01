@@ -21,3 +21,14 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 # Install vim plugins
 vim +BundleInstall +qall
+
+# Install packages
+platform=$(uname)
+if [[ $platform = "Darwin" ]]; then
+    echo "Found Darwin"
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    source ~/.
+    for brewpackage in `cat brew.list`; do
+        brew install $brewpackage
+    done
+fi
