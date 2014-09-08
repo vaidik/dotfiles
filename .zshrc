@@ -7,10 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -68,6 +64,7 @@ export PATH="/Users/vkapoor/Applications/activator/activator-dist:$PATH"
 export PATH="/Users/vkapoor/Applications/play/play-dist:$PATH"
 
 # Source aliases
+source ~/dotfiles/aliases
 source ~/.aliasrc
 
 # ZSH Prompt

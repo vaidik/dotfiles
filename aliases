@@ -1,0 +1,29 @@
+function youtube-dl-mp3 () {
+    youtube-dl --extract-audio --audio-format mp3 $1
+}
+
+function website-dl () {
+    wget \
+        --recursive \
+        --no-clobber \
+        --page-requisites \
+        --html-extension \
+        --convert-links \
+        --restrict-file-names=windows \
+        --domains `echo $1 | awk -F/ '{print \$3}'` \
+        --no-parent \
+            $1
+}
+
+function parallel-wget () {
+    THREADS=$1
+    URL=$2
+    echo $1 $2
+
+    WGETFLAGS="-r -np -N"
+    for i in {1..$THREADS}; do
+        command="wget $WGETFLAGS $URL"
+        echo $command
+        eval "$command"
+    done
+}
