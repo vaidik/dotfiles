@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+PLATFORM=$(uname)
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -71,4 +72,6 @@ source ~/.aliasrc
 # PROMPT="${ret_status}%{$fg_bold[green]%}%p[%m] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
 
 # Archey
-archey -c
+if [[ $PLATFORM = "Darwin" ]]; then
+    archey -c
+fi
