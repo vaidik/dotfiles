@@ -16,8 +16,9 @@ set number
 se mouse+=a
 
 " highlight current line
-set cursorline
+set cursorline cursorcolumn
 hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE
+hi CursorColumn   cterm=NONE ctermbg=black ctermfg=NONE
 
 " highlight white spaces at the end of line
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -53,6 +54,10 @@ hi Search cterm=NONE ctermfg=black ctermbg=darkgrey
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l,[,]
+
+" Auto wrap lines when line-length exceeds 80 chars
+set wrap
+set textwidth=80
 
 " Sets how many lines of history VIM has to remember
 set history=700
@@ -135,4 +140,7 @@ Bundle 'derekwyatt/vim-scala'
 " Syntastic
 Bundle 'scrooloose/syntastic'
 
-" autocmd VimEnter * NERDTree
+autocmd VimEnter * NERDTree
+
+" Automatically set cwd to currently editing file
+set autochdir
