@@ -296,7 +296,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~/dotfiles</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -320,29 +320,14 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>387 476 924 485 0 0 1680 1028 </string>
+	<string>520 251 605 485 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 101 836 927 0 0 1680 1028 </string>
+	<string>0 64 1914 1114 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 67 1676 961 0 0 1680 1028 </string>
+	<string>0 47 1914 1131 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 67 1676 961 0 0 1680 1028 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 67 1676 961 0 0 1680 1028 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>0 67 1676 961 0 0 1680 1028 </string>
+	<string>0 47 1914 1131 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2011,8 +1996,6 @@
 			<string>/Users/vkapoor</string>
 		</dict>
 	</array>
-	<key>NoSyncNeverRemindPrefsChangesCopy</key>
-	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2061,7 +2044,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/vkapoor/.iterm2</string>
+	<string>/Users/vaidik/dotfiles/.iterm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -2073,11 +2056,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/legacy_testing.xml</string>
+	<string>http://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-02-04T05:09:52Z</date>
+	<date>2014-10-29T20:10:02Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2111,7 +2094,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Lucida Grande UI</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
@@ -2123,6 +2106,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140112</string>
+	<string>2.0</string>
 </dict>
 </plist>

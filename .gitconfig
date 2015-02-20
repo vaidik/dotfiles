@@ -8,8 +8,8 @@
     bmerge = "!f() { git merge --no-ff $1; }; f"
     pm = "pull --rebase origin master"
 
-    gitignore-list = "! /Users/vkapoor/.git-commands/git-gitignore-list"
-    gitignore-add = "! /Users/vkapoor/.git-commands/git-gitignore-add"
-    deploy = "! /Users/vkapoor/.git-commands/git-deploy"
+    gitignore-list = "! ~/.git-commands/git-gitignore-list"
+    gitignore-add = "! ~/.git-commands/git-gitignore-add"
+    deploy = "! ~/.git-commands/git-deploy"
 [color]
 	ui = true
