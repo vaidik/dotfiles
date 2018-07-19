@@ -124,6 +124,8 @@ Bundle 'gmarik/vundle'
 
 " Install Vim again to get conceal to make indentLine plugin work. 'http://github.com/Yggdroot/indentLine.git'
 Bundle 'scrooloose/nerdtree'
+autocmd VimEnter * NERDTree
+au VimEnter * wincmd l
 
 " flake8 settings
 Bundle 'nvie/vim-flake8'
@@ -139,8 +141,6 @@ Bundle 'derekwyatt/vim-scala'
 
 " Syntastic
 Bundle 'scrooloose/syntastic'
-
-autocmd VimEnter * NERDTree
 
 " Automatically set cwd to currently editing file
 set autochdir

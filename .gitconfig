@@ -1,6 +1,7 @@
 [user]
 	email = kapoor.vaidik@gmail.com
 	name = Vaidik Kapoor
+	signingkey = D32994C21BCB31BC
 
 [alias]
     plog = log --pretty=format:\"%h - %an, %ar : %s\"
