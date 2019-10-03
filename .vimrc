@@ -144,3 +144,6 @@ Bundle 'scrooloose/syntastic'
 
 " Automatically set cwd to currently editing file
 set autochdir
+
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'

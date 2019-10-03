@@ -55,6 +55,10 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -68,10 +72,13 @@ export PATH="/Users/vkapoor/Applications/play/play-dist:$PATH"
 source ~/dotfiles/aliases
 source ~/.aliasrc
 
+# Source Secrets
+source ~/.secrets
+
 # ZSH Prompt
 # PROMPT="${ret_status}%{$fg_bold[green]%}%p[%m] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
 
-# Archey
-if [[ $PLATFORM = "Darwin" ]]; then
-    archey -c
-fi
+# Set kubectl prompt
+autoload -U colors; colors
+source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
+RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
