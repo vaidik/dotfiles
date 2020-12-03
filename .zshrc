@@ -37,13 +37,16 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python ruby node npm pip brew django fabric gem gnu-utils go golang macports osx redis-cli sublime svn vagrant)
+plugins=(git python ruby node npm pip poetry brew gem gnu-utils golang docker kubectl macports osx iterm2)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
-export PATH=$PATH:/Users/vkapoor/Development/adt-bundle-mac-x86_64-20130522/sdk/platform-tools
+export PATH=$HOME/.local/bin:$PATH
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"
 
 # startup virtualenv-burrito
 if [ -f $HOME/.venvburrito/startup.sh ]; then
@@ -53,27 +56,18 @@ fi
 # Virtualenv settings
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Typesafe Activator
-export PATH="/Users/vkapoor/Applications/activator/activator-dist:$PATH"
-
-# Play Path
-export PATH="/Users/vkapoor/Applications/play/play-dist:$PATH"
-
 # Source aliases
-source ~/dotfiles/aliases
-source ~/.aliasrc
+#source ~/dotfiles/aliases
+#source ~/.aliasrc
 
 # Source Secrets
-source ~/.secrets
+#source ~/.secrets
 
 # ZSH Prompt
 # PROMPT="${ret_status}%{$fg_bold[green]%}%p[%m] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
@@ -82,3 +76,5 @@ source ~/.secrets
 autoload -U colors; colors
 source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+export KUBECONFIG=$HOME/.kube/grofers-k8s-config
+export GPG_TTY=$(tty)
