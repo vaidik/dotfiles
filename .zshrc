@@ -37,7 +37,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python ruby node npm pip poetry brew gem gnu-utils golang docker kubectl macports osx iterm2)
+plugins=(git python ruby node npm pip poetry brew gem gnu-utils golang docker kubectl macports macos iterm2)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,7 +56,6 @@ fi
 # Virtualenv settings
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-#source /usr/local/bin/virtualenvwrapper.sh
 
 # pyenv
 eval "$(pyenv init -)"
@@ -67,14 +66,14 @@ eval "$(pyenv virtualenv-init -)"
 #source ~/.aliasrc
 
 # Source Secrets
-#source ~/.secrets
+source ~/.secrets
 
 # ZSH Prompt
 # PROMPT="${ret_status}%{$fg_bold[green]%}%p[%m] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
 
 # Set kubectl prompt
 autoload -U colors; colors
-source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 export KUBECONFIG=$HOME/.kube/grofers-k8s-config
 export GPG_TTY=$(tty)

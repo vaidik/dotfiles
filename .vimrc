@@ -122,6 +122,10 @@ match OverLength /\%81v.\+/
 
 Bundle 'gmarik/vundle'
 
+" Install theme
+Bundle 'chriskempson/base16-vim'
+" colorscheme base16-tomorrow-night
+
 " Instant Markdown settings
 " Bundle 'suan/vim-instant-markdown'
 
